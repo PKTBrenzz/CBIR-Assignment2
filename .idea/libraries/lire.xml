@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="lire">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../LIRE-SimpleApplication/lib/lire.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lire.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
