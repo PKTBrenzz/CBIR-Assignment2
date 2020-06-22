@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane layoutX="193.0" layoutY="70.0" prefHeight="200.0" prefWidth="215.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Indexing and Searching">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="selectImgDirButton" layoutX="450.0" layoutY="41.0" mnemonicParsing="false" onAction="#selectImgDirButton_pressed" text="Select Image Directory" />
+                        <TextField fx:id="imgDirTextField" editable="false" layoutX="14.0" layoutY="41.0" prefHeight="25.0" prefWidth="422.0" />
+                        <Button fx:id="startIndexButton" layoutX="255.0" layoutY="78.0" mnemonicParsing="false" onAction="#startIndexButton_pressed" text="Start indexing" />
+                        <TextField fx:id="imagePathTextField" editable="false" layoutX="15.0" layoutY="167.0" prefHeight="25.0" prefWidth="424.0" />
+                        <Button fx:id="selectImgButton" layoutX="451.0" layoutY="167.0" mnemonicParsing="false" onAction="#selectImgButton_pressed" prefHeight="25.0" prefWidth="135.0" text="Select Image" />
+                        <Button fx:id="startSearchButton" layoutX="252.0" layoutY="207.0" mnemonicParsing="false" onAction="#startSearchButton_pressed" text="Start Searching" />
+                        <Label layoutX="15.0" layoutY="14.0" text="Image directory path used for indexing" />
+                        <Label layoutX="15.0" layoutY="142.0" text="Selected image path" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Setting">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="typeSearcherChoiceBox" layoutX="176.0" layoutY="14.0" prefHeight="25.0" prefWidth="295.0" />
+                        <Label layoutX="25.0" layoutY="18.0" text="Type of ImageSearcher" />
+                        <Label layoutX="25.0" layoutY="55.0" text="Number of search results" />
+                        <TextField fx:id="numberSearchTextField" layoutX="176.0" layoutY="51.0" prefHeight="25.0" prefWidth="297.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TabPane>
+   </children>
+</AnchorPane>
